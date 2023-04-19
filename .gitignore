@@ -1,5 +1,6 @@
 # pdm
 .pdm.toml
+.pdm-python
 pdm.lock
 
 # Created by https://www.toptal.com/developers/gitignore/api/python
