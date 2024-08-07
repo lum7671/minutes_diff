@@ -1,17 +1,19 @@
 [project]
-name = ""
-version = ""
-description = ""
+name = "minutes_diff"
+version = "0.1.0"
+description = "Default template for PDM package"
 authors = [
     {name = "Nate Jang", email = "dh.jang@gmail.com"},
+    {name = "Nate Doohyun Jang", email = "dh.jang@gmail.com"},
 ]
 dependencies = []
-requires-python = ">=3.9"
+requires-python = "==3.12.*"
 license = {text = "MIT"}
+readme = "README.md"
 
 [project.urls]
 homepage = ""
 
-[build-system]
-requires = ["pdm-pep517"]
-build-backend = "pdm.pep517.api"
+
+[tool.pdm]
+distribution = false
