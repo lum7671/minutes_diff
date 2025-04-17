@@ -1,19 +1,24 @@
 [project]
-name = "minutes_diff"
+name = "minutes-diff"
 version = "0.1.0"
-description = "Default template for PDM package"
+description = "Add your description here"
 authors = [
-    {name = "Nate Jang", email = "dh.jang@gmail.com"},
-    {name = "Nate Doohyun Jang", email = "dh.jang@gmail.com"},
+    { name = "Nate Doohyun Jang", email = "antz@duck.com" }
 ]
 dependencies = []
-requires-python = "==3.12.*"
-license = {text = "MIT"}
 readme = "README.md"
+requires-python = ">= 3.8"
 
-[project.urls]
-homepage = ""
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
+[tool.rye]
+managed = true
+dev-dependencies = []
 
-[tool.pdm]
-distribution = false
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/minutes_diff"]
